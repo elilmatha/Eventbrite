@@ -1,0 +1,6 @@
+2014-09-24 15:42:46,252 [-] [http-nio-9443-exec-30]  INFO getSpecificContactListDetails Building Axis service for Proxy service : getSpecificContactListDetails
+2014-09-24 15:42:46,254 [-] [http-nio-9443-exec-30]  INFO getSpecificContactListDetails Adding service getSpecificContactListDetails to the Axis2 configuration
+2014-09-24 15:42:46,323 [-] [http-nio-9443-exec-30]  INFO getSpecificContactListDetails Successfully created the Axis2 service for Proxy service : getSpecificContactListDetails
+2014-09-24 15:42:49,316 [-] [http-nio-9443-exec-34]  INFO getSpecificContactListDetails Building Axis service for Proxy service : getSpecificContactListDetails
+2014-09-24 15:42:49,347 [-] [http-nio-9443-exec-34]  INFO getSpecificContactListDetails Adding service getSpecificContactListDetails to the Axis2 configuration
+2014-09-24 15:42:49,492 [-] [http-nio-9443-exec-34]  INFO getSpecificContactListDetails Successfully created the Axis2 service for Proxy service : getSpecificContactListDetails

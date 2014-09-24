@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ESBTestSuite" duration-ms="35498" started-at="2014-09-24T15:42:15Z" finished-at="2014-09-24T15:42:50Z">
+  <groups>
+    <group name="java.lang.reflect.Method">
+      <method signature="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest.testgetContactListDetailsWithMandatoryParameters()" name="testgetContactListDetailsWithMandatoryParameters" class="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest"/>
+      <method signature="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest.testgetSpecificContactListDetailsWithNegativeCase()" name="testgetSpecificContactListDetailsWithNegativeCase" class="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest"/>
+    </group>
+  </groups>
+  <test name="event_brite-Connector-Test" duration-ms="35498" started-at="2014-09-24T15:42:15Z" finished-at="2014-09-24T15:42:50Z">
+    <class name="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest">
+      <test-method status="PASS" signature="setEnvironment()" name="setEnvironment" is-config="true" duration-ms="30744" started-at="2014-09-24T15:42:15Z" finished-at="2014-09-24T15:42:46Z">
+      </test-method>
+      <test-method status="PASS" signature="testgetContactListDetailsWithMandatoryParameters()" name="testgetContactListDetailsWithMandatoryParameters" duration-ms="3071" started-at="2014-09-24T15:42:46Z" description="event_brite{getSpecificContactListDetails} integration test with mandatory parameters." finished-at="2014-09-24T15:42:49Z">
+      </test-method>
+      <test-method status="PASS" signature="testgetSpecificContactListDetailsWithNegativeCase()" name="testgetSpecificContactListDetailsWithNegativeCase" duration-ms="1665" started-at="2014-09-24T15:42:49Z" description="event_brite{getSpecificContactListDetails} integration test with negative." finished-at="2014-09-24T15:42:50Z">
+      </test-method>
+    </class>
+  </test>
+</suite>

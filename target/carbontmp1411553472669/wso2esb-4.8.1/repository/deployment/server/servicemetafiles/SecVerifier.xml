@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup name="SecVerifier"
+              hashValue="1236062d84e91cd3bbde71582d9fa629"
+              successfullyAdded="true">
+   <service name="SecurityVerifierService"
+            serviceDocumentation="SecurityVerifierService"
+            exposedAllTransports="true"
+            serviceDeployedTime="1411553519760"
+            successfullyAdded="true">
+      <operation name="verifyAdminServices">
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <bindings>
+         <binding name="SecurityVerifierServiceSoap11Binding">
+            <operation name="verifyAdminServices"/>
+         </binding>
+         <binding name="SecurityVerifierServiceHttpBinding">
+            <operation name="verifyAdminServices"/>
+         </binding>
+         <binding name="SecurityVerifierServiceSoap12Binding">
+            <operation name="verifyAdminServices"/>
+         </binding>
+      </bindings>
+      <policies/>
+      <module name="addressing" version="4.2.0" type="engagedModules"/>
+      <parameter name="ServiceClass" locked="true">
+            org.wso2.carbon.integration.secverifier.SecurityVerifierService
+        </parameter>
+   </service>
+</serviceGroup>

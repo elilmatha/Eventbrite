@@ -1,0 +1,1 @@
+2014-09-24 15:41:38,379 [-] [Start Level Event Dispatcher]  WARN ValidationResultPrinter The default keystore (wso2carbon.jks) is currently being used. To maximize security when deploying to a production environment, configure a new keystore with a unique password in the production server profile.

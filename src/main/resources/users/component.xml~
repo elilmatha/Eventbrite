@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="users" type="synapse/template">
+    <subComponents>
+        <component name="getUserDetails">
+            <file>getUserDetails.xml</file>
+            <description>Returns profile information</description>
+        </component>
+         <component name="getUserOrder">
+            <file>getUserOrder.xml</file>
+            <description>Returns orders information</description>
+        </component>
+            <component name="getUserOwned_events">
+            <file>getUserOwned_events.xml</file>
+            <description>Returns events information</description>
+        </component>
+
+    </subComponents>
+</component>

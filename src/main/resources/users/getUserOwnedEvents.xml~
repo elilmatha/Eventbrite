@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://ws.apache.org/ns/synapse" name="getUserOwnedEvents">
+    <parameter name="userId"/>
+    <parameter name="status"  />
+    <parameter name="order_by"  />
+    <parameter name="parameters"/>
+ 
+    <sequence>
+	<property name="uri.var.userId" expression="$func:userId" />
+        <property name="uri.var.status" expression="$func:status" />
+        <property name="uri.var.order_by" expression="$func:order_by" />
+     
+        <property name="eventbrite.parameters" value=""/>
+
+
+ <filter xpath="(not(get-property('uri.var.status') = '' or (not(string(get-property('uri.var.status'))))))">
+            <then>
+                <property name="uri.var.eventbrite.parameters"
+                          expression="fn:concat(get-property('uri.var.eventbrite.parameters'),'status=',get-property('uri.var.status'))"/>
+            </then>
+        </filter>
+
+
+     
+
+ <filter xpath="(not(get-property('uri.var.order_by') = '' or (not(string(get-property('uri.var.order_by'))))))">
+            <then>
+                <property name="uri.var.eventbrite.parameters"
+                          expression="fn:concat(get-property('uri.var.eventbrite.parameters'),'order_by=',get-property('uri.var.order_by'))"/>
+            </then>
+        </filter> 
+<call>
+           <endpoint>
+               <http method="get"
+                     uri-template="{uri.var.eventbrite.apiUrl}/v3/users/{uri.var.userId}/owned_events?{uri.var.eventbrite.parameters}&amp;token={uri.var.eventbrite.accessToken}"/>
+
+           </endpoint>
+       </call>
+</sequence>
+</template>
+
+
+

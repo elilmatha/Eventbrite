@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector>
+    <component name="event_brite" package="org.wso2.carbon.connector" >
+        <dependency component="helloWorld"/>
+        <dependency component="eventbrite_config"/>
+        <dependency component="users"/>
+       
+	<dependency component="orders"/>
+	<dependency component="contact_lists"/>
+        <dependency component="event"/>
+
+
+        <description>wso2 sample connector library</description>
+    </component>
+<icon>icon/icon-twitter-small.png</icon>
+</connector>

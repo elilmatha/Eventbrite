@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="contact_lists" type="synapse/template" >
+<subComponents>
+    <component name="getContactListDetails">
+        <file>getContactListDetails.xml</file>
+        <description>Returns profile information</description>
+    </component>
+
+
+    <component name="getContactLists">
+        <file>getContactLists.xml</file>
+        <description>Returns profile information</description>
+    </component>
+
+
+</subComponents>
+</component>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://ws.apache.org/ns/synapse" name="CreateContactListDetails">
+<parameter name="userId"/>
+<parameter name="contactlistId"/>
+	
+<parameter name="email"/>
+<parameter name="first_name"/>
+<parameter name="last_name"/>
+
+
+    <sequence>
+
+
+        <property name="uri.var.userId" expression="$func:userId" />
+	<property name="uri.var.contactlistId" expression="$func:contactlistId" scope="default" />
+
+<property name="uri.var.email" expression="$func:email" scope="default" />
+<property name="uri.var.first_name" expression="$func:first_name" scope="default" />
+<property name="uri.var.last_name" expression="$func:last_name" scope="default" />
+
+
+	<filter xpath="get-property('uri.var.email') = '' or not(string(get-property('uri.var.email')))">
+            <then>
+                <property name="uri.var.email" value="" />
+            </then>
+            <else>
+                <property name="parameters" expression="fn:concat(get-property('parameters'),
+                '&amp;email=', get-property('uri.var.email'))" />
+            </else>
+        </filter>
+
+<filter xpath="get-property('uri.var.first_name') = '' or not(string(get-property('uri.var.first_name')))">
+            <then>
+                <property name="uri.var.first_name" value="" />
+            </then>
+            <else>
+                <property name="parameters" expression="fn:concat(get-property('parameters'),
+                '&amp;first_name=', get-property('uri.var.first_name'))" />
+            </else>
+        </filter>
+
+
+
+<filter xpath="get-property('uri.var.last_name') = '' or not(string(get-property('uri.var.last_name')))">
+            <then>
+                <property name="uri.var.last_name" value="" />
+            </then>
+            <else>
+                <property name="parameters" expression="fn:concat(get-property('parameters'),
+                '&amp;last_name=', get-property('uri.var.last_name'))" />
+            </else>
+        </filter>
+
+
+	 <property name="uri.var.parameters" expression="get-property('parameters')"/>
+        <call>
+            <endpoint>
+
+
+                <http method="POST"
+                      uri-template="{uri.var.eventbrite.apiUrl}/v3/users/{uri.var.userId}/contact_lists/{uri.var.contactlistId}/contacts/?{uri.var.parameters}token={uri.var.eventbrite.accessToken}" />
+
+
+
+
+            </endpoint>
+        </call>
+    </sequence>
+</template>
+
+
+
+
+
+  
+
+
+
+    
+
+     

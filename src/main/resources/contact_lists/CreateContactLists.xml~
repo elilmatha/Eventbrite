@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://ws.apache.org/ns/synapse" name="CreateContactLists">
+    <parameter name="userId"/>
+	<!--optional parameters -->
+    <parameter name="contact_list_name" />
+
+
+    <sequence>
+
+
+        <property name="uri.var.userId" expression="$func:userId" />
+	<property name="uri.var.contact_list_name" expression="$func:contact_list_name" scope="default" />
+	<filter xpath="get-property('uri.var.uri.var.contact_list_name') = '' or not(string(get-property('uri.var.uri.var.contact_list_name')))">
+            <then>
+                <property name="uri.var.uri.var.contact_list_name" value="" />
+            </then>
+            <else>
+                <property name="parameters" expression="fn:concat(get-property('parameters'),
+                '&amp;contact_list_name=', get-property('uri.var.contact_list_name'))" />
+            </else>
+        </filter>
+	 <property name="uri.var.parameters" expression="get-property('parameters')"/>
+        <call>
+            <endpoint>
+
+
+                <http method="POST"
+                      uri-template="{uri.var.eventbrite.apiUrl}/v3/users/{uri.var.userId}/contact_lists/?{uri.var.parameters}token={uri.var.eventbrite.accessToken}" />
+
+
+            </endpoint>
+        </call>
+    </sequence>
+</template>
+
+
+
+
+
+  
+
+
+
+    
+
+     
