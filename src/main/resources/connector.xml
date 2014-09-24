@@ -4,8 +4,9 @@
         <dependency component="helloWorld"/>
         <dependency component="eventbrite_config"/>
         <dependency component="users"/>
-       
-	<dependency component="orders"/>
+        <dependency component="event"/>
+
+        <dependency component="orders"/>
 	<dependency component="contact_lists"/>
         
 
