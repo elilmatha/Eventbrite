@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.wso2.carbon:org.wso2.carbon.logging.view.stub:4.3.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/org.wso2.carbon.logging.view.stub/4.3.0-SNAPSHOT/org.wso2.carbon.logging.view.stub-4.3.0-20140916.193249-537.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/org.wso2.carbon.logging.view.stub/4.3.0-SNAPSHOT/org.wso2.carbon.logging.view.stub-4.3.0-20140923.193404-544.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/org.wso2.carbon.logging.view.stub/4.3.0-SNAPSHOT/org.wso2.carbon.logging.view.stub-4.3.0-20140916.193249-537-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/org.wso2.carbon.logging.view.stub/4.3.0-SNAPSHOT/org.wso2.carbon.logging.view.stub-4.3.0-20140923.193404-544-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/org.wso2.carbon.logging.view.stub/4.3.0-SNAPSHOT/org.wso2.carbon.logging.view.stub-4.3.0-20140916.193249-537-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/wso2/carbon/org.wso2.carbon.logging.view.stub/4.3.0-SNAPSHOT/org.wso2.carbon.logging.view.stub-4.3.0-20140923.193404-544-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

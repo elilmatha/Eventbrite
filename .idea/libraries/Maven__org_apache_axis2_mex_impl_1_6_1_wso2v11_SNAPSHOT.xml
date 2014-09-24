@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.axis2:mex:impl:1.6.1-wso2v11-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis2/mex/1.6.1-wso2v11-SNAPSHOT/mex-1.6.1-wso2v11-20140916.220546-608-impl.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis2/mex/1.6.1-wso2v11-SNAPSHOT/mex-1.6.1-wso2v11-20140923.221509-623-impl.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis2/mex/1.6.1-wso2v11-SNAPSHOT/mex-1.6.1-wso2v11-20140916.220546-608-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis2/mex/1.6.1-wso2v11-SNAPSHOT/mex-1.6.1-wso2v11-20140923.221509-623-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis2/mex/1.6.1-wso2v11-SNAPSHOT/mex-1.6.1-wso2v11-20140916.220546-608-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/axis2/mex/1.6.1-wso2v11-SNAPSHOT/mex-1.6.1-wso2v11-20140923.221509-623-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

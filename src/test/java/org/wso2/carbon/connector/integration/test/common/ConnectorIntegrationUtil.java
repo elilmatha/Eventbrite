@@ -1,36 +1,34 @@
 package org.wso2.carbon.connector.integration.test.common;
 
 
+import org.apache.axiom.om.OMElement;
+import org.apache.axiom.om.util.AXIOMUtil;
+import org.apache.axiom.soap.SOAP12Constants;
+import org.apache.axis2.AxisFault;
+import org.apache.axis2.Constants;
+import org.apache.axis2.addressing.EndpointReference;
+import org.apache.axis2.client.Options;
+import org.apache.axis2.client.ServiceClient;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.wso2.carbon.automation.core.ProductConstant;
+import org.wso2.carbon.mediation.library.stub.upload.MediationLibraryUploaderStub;
+import org.wso2.carbon.mediation.library.stub.upload.types.carbon.LibraryFileItem;
 
-
-        import org.apache.axiom.om.OMElement;
-        import org.apache.axiom.om.util.AXIOMUtil;
-        import org.apache.axiom.soap.SOAP12Constants;
-        import org.apache.axis2.AxisFault;
-        import org.apache.axis2.Constants;
-        import org.apache.axis2.addressing.EndpointReference;
-        import org.apache.axis2.client.Options;
-        import org.apache.axis2.client.ServiceClient;
-        import org.apache.commons.logging.Log;
-        import org.apache.commons.logging.LogFactory;
-        import org.json.JSONArray;
-        import org.json.JSONException;
-        import org.json.JSONObject;
-        import org.wso2.carbon.automation.core.ProductConstant;
-        import org.wso2.carbon.mediation.library.stub.upload.MediationLibraryUploaderStub;
-        import org.wso2.carbon.mediation.library.stub.upload.types.carbon.LibraryFileItem;
-
-        import javax.activation.DataHandler;
-        import javax.xml.stream.XMLStreamException;
-        import java.io.*;
-        import java.net.HttpURLConnection;
-        import java.net.MalformedURLException;
-        import java.net.URL;
-        import java.net.URLConnection;
-        import java.rmi.RemoteException;
-        import java.util.ArrayList;
-        import java.util.List;
-        import java.util.Properties;
+import javax.activation.DataHandler;
+import javax.xml.stream.XMLStreamException;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
 public class ConnectorIntegrationUtil {
 
@@ -366,5 +364,7 @@ public class ConnectorIntegrationUtil {
         String first = ("" + string.charAt(0)).toUpperCase();
         return first + post;
     }
+
+
 
 }
