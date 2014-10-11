@@ -89,7 +89,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
      * Positive test case for getUserDetails method with mandatory parameters.
      */
 
-/*
+
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{getuserdetails} integration test with mandatory parameters.")
     public void testgetUserDetailsWithMandatoryParameters() throws Exception {
@@ -113,7 +113,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         }
 	}
 
-	*/
+	
 
 
 
@@ -122,7 +122,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
      */
 
 
-/*
+
     @Test(groups = { "wso2.esb" }, description = "event_brite{getuserdetails} integration test with negative.")
     public void testgetUserDetailsWithNegativeCase() throws Exception {
 
@@ -145,13 +145,13 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         }
     }
 
-    */
+   
 
     /**
      * Positive test case for getUserOrder method with mandatory parameters.
      */
 
-    /*
+    
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOrder} integration test with mandatory parameters.")
     public void testgetUserOrderWithMandatoryParameters() throws Exception {
@@ -173,7 +173,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         } finally {
             proxyAdmin.deleteProxy(methodName);
         }
-    }*/
+    }
 
 
 
@@ -182,7 +182,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
      * Negative test case for  getUserOrder method .
      */
 
-/*
+
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOrder} integration test with negative.")
     public void testgetUserOrderWithNegativeCase() throws Exception {
@@ -206,14 +206,14 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         }
     }
 
-    */
+    
 
     /**
      * Positive test case for getUserOwnedEvents method with optinal parameters.
      */
 
-/*
 
+/*
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOwnedEvents} integration test with optinal parameters.")
     public void testgetUserOwnedEventsWithOptinalParameters() throws Exception {
 
@@ -236,6 +236,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
             proxyAdmin.deleteProxy(methodName);
         }
     }
+
 */
 
 
@@ -268,14 +269,14 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
     }
 
 
-    */
-
+    
+*/
 
     /**
      * Positive test case for getUserOwnedEventsOrders method with optinal parameters.
      */
 
-/*
+
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOwnedEventsOrders} integration test with optinal parameters.")
     public void testgetUserOwnedEventsOrdersWithOptinalParameters() throws Exception {
@@ -292,8 +293,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
         try {
             int responseHeader = ConnectorIntegrationUtil.sendRequestToRetriveHeaders(getProxyServiceURL(methodName), modifiedJsonString);
-            System.out.println("222222222223333333333"+responseHeader);
-            Assert.assertTrue(responseHeader == 200);
+		Assert.assertTrue(responseHeader == 200);
 
         } finally {
             proxyAdmin.deleteProxy(methodName);
@@ -304,7 +304,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
     }
 
-*/
+
 
 
 
@@ -313,7 +313,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
      */
 
 
-/*
+
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOwnedEventsOrders} integration test with negative.")
     public void testgetUserOwnedEventsOrdersWithNegativeCase() throws Exception {
 
@@ -337,7 +337,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
     }
 
 
-*/
+
 
 
 
@@ -346,7 +346,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 /**
  * Positive test case for getUserOwnedEventAttendees method with optinal parameters.
  */
-/*
+
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOwnedEventAttendees} integration test with optinal parameters.")
     public void testgetUserOwnedEventAttendeesWithOptinalParameters() throws Exception {
@@ -373,7 +373,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
 
     }
-*/
+
 
 
 
@@ -382,7 +382,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
      */
 
 
-/*
+
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOwnedEventAttendees} integration test with negative.")
     public void testgetUserOwnedEventAttendeesWithNegativeCase() throws Exception {
 
@@ -408,14 +408,14 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
 
 
-*/
+
 
 
     /**
      * Positive test case for getUserVenues method with mandatory parameters.
      */
 
-/*
+
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserVenues} integration test with mandatory parameters.")
     public void testgetUserVenuesWithMandatoryParameters() throws Exception {
@@ -439,7 +439,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         }
 	}
 
-*/
+
 
     /**
      * Negative test case for  getUserVenues method .
@@ -447,7 +447,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
 
 
-   /* @Test(groups = { "wso2.esb" }, description = "event_brite{getUserVenues} integration test with negative.")
+    @Test(groups = { "wso2.esb" }, description = "event_brite{getUserVenues} integration test with negative.")
     public void testgetUserVenuesWithNegativeCase() throws Exception {
 
         String jsonRequestFilePath = pathToRequestsDirectory + "getUserVenues_negative.txt";
@@ -468,7 +468,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
             proxyAdmin.deleteProxy(methodName);
         }
     }
-*/
+
 
 
 
@@ -480,7 +480,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
      */
 
 
-/*
+
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOrganizers} integration test with mandatory parameters.")
     public void testgetUserOrganizersWithMandatoryParameters() throws Exception {
 
@@ -505,13 +505,13 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 	}
 
 
-*/
+
     /**
      * Negative test case for  getUserOrganizers method .
      */
 
 
-/*
+
     @Test(groups = { "wso2.esb" }, description = "event_brite{getUserOrganizers} integration test with negative.")
     public void testgetUserOrganizersWithNegativeCase() throws Exception {
 
@@ -535,7 +535,6 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
     }
 
 
-*/
 
 
     //-------------------------------------------------------Order Category----------------------------------------------------------------------------------------------------------------------------------
@@ -548,8 +547,8 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
      */
 
 
-
-    /*
+/*
+    
     @Test(groups = { "wso2.esb" }, description = "event_brite{getOrderDetails} integration test with mandatory parameters.")
 
     public void testgetOrderDetailsWithMandatoryParameters() throws Exception {
@@ -573,8 +572,9 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
             proxyAdmin.deleteProxy(methodName);
         }
 	}
-*/
 
+
+*/
 
     /**
      * Negative test case for  getOrderDetails method .
@@ -582,7 +582,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
 
 
-   /* @Test(groups = { "wso2.esb" }, description = "event_brite{getOrderDetails} integration test with negative.")
+   @Test(groups = { "wso2.esb" }, description = "event_brite{getOrderDetails} integration test with negative.")
     public void testgetOrderDetailsWithNegativeCase() throws Exception {
 
         String jsonRequestFilePath = pathToRequestsDirectory + "getOrderDetails_negative.txt";
@@ -603,7 +603,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
             proxyAdmin.deleteProxy(methodName);
         }
     }
-*/
+
 
 
 
@@ -615,7 +615,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
  * Positive test case for getContactLists method with mandatory parameters.
  */
 
-/*
+
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{getContactLists} integration test with mandatory parameters.")
     public void testgetContactListsWithMandatoryParameters() throws Exception {
@@ -639,7 +639,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         }
 	}
 
-*/
+
 
 
 /**
@@ -647,7 +647,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
  */
 
 
-/*
+
     @Test(groups = { "wso2.esb" }, description = "event_brite{getContactLists} integration test with negative.")
     public void testgetContactListsWithNegativeCase() throws Exception {
 
@@ -672,7 +672,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
 
 
-*/
+
 
 
 
@@ -704,8 +704,8 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
         }
 	}
 
-*/
 
+*/
 
 /**
  * Negative test case for getContactListDetails  method .
@@ -806,7 +806,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
 
     //------------------------------event-------------------------------------------------------------------
 //-------------------------------event-madatory----------------------------------------------
-/*
+
 @Test(groups = { "wso2.esb" }, description = "event_brite{eventTeams} integration test.")
     public void testEventTeamsWithMandatoryParameters() throws Exception {
 
@@ -1085,7 +1085,7 @@ public class eventbriteConnectorIntegrationTest extends ESBIntegrationTest {
             proxyAdmin.deleteProxy(methodName);
         }
     }
-*/
+
 //-------------------------------------event-negative--------------------------------------
 
     @Test(groups = { "wso2.esb" }, description = "event_brite{eventTeams} integration Negative test.")
