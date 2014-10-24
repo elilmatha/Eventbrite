@@ -3,7 +3,7 @@
 <subComponents>
     <component name="getOrderDetails">
         <file>getOrderDetails.xml</file>
-        <description>Returns profile information</description>
+        <description>Returns order information</description>
     </component>
 
 

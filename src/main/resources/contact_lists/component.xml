@@ -3,32 +3,32 @@
 <subComponents>
     <component name="getContactListDetails">
         <file>getContactListDetails.xml</file>
-        <description>Returns profile information</description>
+        <description>Returns ContactList information</description>
     </component>
 
 
     <component name="getContactLists">
         <file>getContactLists.xml</file>
-        <description>Returns profile information</description>
+        <description>Returns ContactList information with id</description>
     </component>
 
 
 	<component name="getSpecificContactListDetails">
         <file>getSpecificContactListDetails.xml</file>
-        <description>Returns profile information</description>
+        <description>Returns ContactList  information</description>
     </component>
 
 <component name="CreateContactListDetails">
         <file>CreateContactListDetails.xml</file>
-        <description>Returns profile information</description>
+        <description>Create contact list details</description>
     </component>
 <component name="CreateContactLists">
         <file>CreateContactLists.xml</file>
-        <description>Returns profile information</description>
+        <description>create contact list</description>
     </component>
 <component name="CreateSpecificContactListDetails">
         <file>CreateSpecificContactListDetails.xml</file>
-        <description>Returns profile information</description>
+        <description>create contact list</description>
     </component>
 
 
