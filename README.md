@@ -29,27 +29,26 @@ STEPS:
 
 6. Edit the "eventbrite.properties" at Integration_Test\products\esb\4.8.1\modules\integration\connectors\src\test\resources\artifacts\ESB\connector\config using valid and relevant data. Parameters to be changed are mentioned below.
 
-	- accessToken: Use the sandbox account created below no-7. Get the access token by the following URL :http://developer.eventbrite.com/documents/authentication.
-	- Alternatively you can also follow the below mentioned steps to get the access token through apigee console.
-		- Navigate to https://apigee.com/console/eventbrite
-		- Under “Authentication” select Oauth2
-		- Select sign in with eventbrite
-		- Provide ur username and password on re-directed page and click allow access
-		- It will come back to apigee page and click send (request URL should https://api.eventbrite.com/v1/people/~)
-		- You will have access token in respose
-
-
+	- login https://www.eventbrite.com/login/ - you may use the dummy Account details below
+	- request access token
+	
 7. Following data set can be used for the first testsuite run.
 
-		proxyDirectoryRelativePath=/../src/test/resources/artifacts/ESB/config/proxies/eventbrite/
-		requestDirectoryRelativePath=/../src/test/resources/artifacts/ESB/config/restRequests/eventbrite/
-		accessToken=<Generate the access token>
-		myPublicUrl=https://www.eventbriteapi.com/v3/events/12792941031/?token=NDYKPVXF2E36W57EB5B2
+	proxyDirectoryRelativePath=/../src/test/resources/artifacts/ESB/config/proxies/event_brite/
 
-		publicProfileUrl=https://www.eventbriteapi.com/v3/events/12792941031/?token=NDYKPVXF2E36W57EB5B2
-		userId=113395378903
+	proxyDirectoryRelativePath=/../src/test/resources/artifacts/ESB/config/proxies/event_brite/
 
-			(followCompanyId: A valid id of a company, which a user needs to follow. This parameter is applicable only for the "followCompanyPage". Please give a new company id for followCompanyId parameter each time you run the integration tests.)
+	requestDirectoryRelativePath=/../src/test/resources/artifacts/ESB/config/restRequests/event_brite/
+	apiUrl=https://www.eventbriteapi.com
+	accessToken=HSX6X635TURH32K5CLMV
+	userId=125733859887
+	contactlistId=772075
+	EventID=13958503259
+	attendeesId=460785255
+	teamId=950713
+	orderId=364498473
+
+
 		Account Details:
 		username: eventbritetesting@gmail.com
 		password: Eventbrite123
