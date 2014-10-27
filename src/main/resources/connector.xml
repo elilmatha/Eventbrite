@@ -13,5 +13,5 @@
 
         <description>wso2 sample connector library</description>
     </component>
-<icon>icon/icon-twitter-small.png</icon>
+<icon>icon/icon-small.png</icon>
 </connector>

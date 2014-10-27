@@ -51,7 +51,7 @@ STEPS:
 
 			(followCompanyId: A valid id of a company, which a user needs to follow. This parameter is applicable only for the "followCompanyPage". Please give a new company id for followCompanyId parameter each time you run the integration tests.)
 		Account Details:
-		username: elilsiva3@gmail.com
-		password: Pathfinder92@feb
+		username: eventbritetesting@gmail.com
+		password: Eventbrite123
 8. Navigate to "Integration_Test\products\esb\4.8.1\modules\integration\connectors\” and run the following command.
      $ mvn clean install
