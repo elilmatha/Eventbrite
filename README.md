@@ -53,4 +53,4 @@ STEPS:
 		username: eventbritetesting@gmail.com
 		password: Eventbrite123
 8. Navigate to "Integration_Test\products\esb\4.8.1\modules\integration\connectors\” and run the following command.
-     $ mvn clean install
+     $ mvn clean install.

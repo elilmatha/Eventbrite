@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="prindu-ThinkPad-T530" name="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest" tests="2" failures="0" timestamp="24 Sep 2014 10:12:50 GMT" time="35.498" errors="0">
-  <testcase name="testgetContactListDetailsWithMandatoryParameters" time="3.071" classname="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest"/>
-  <testcase name="testgetSpecificContactListDetailsWithNegativeCase" time="1.665" classname="org.wso2.carbon.connector.integration.test.event_brite.eventbriteConnectorIntegrationTest"/>
-</testsuite>
