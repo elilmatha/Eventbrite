@@ -19,7 +19,6 @@
                 <orderId>{$ctx:orderId}</orderId>
             </event_brite.getOrderDetails>
 
-
             <respond/>
         </inSequence>
         <outSequence>

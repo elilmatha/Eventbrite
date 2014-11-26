@@ -2,5 +2,5 @@
 "apiUrl":"https://www.eventbriteapi.com",
 "accessToken":"%s",
 "EventID":"%s",
-"teamId":""
+"teamId":"9507"
 }

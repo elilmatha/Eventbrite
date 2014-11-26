@@ -18,7 +18,6 @@
 
             <event_brite.eventTransfers>
                 <EventID>{$ctx:EventID}</EventID>
-
             </event_brite.eventTransfers>
             <respond/>
 

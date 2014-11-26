@@ -5,14 +5,10 @@
     <sequence>
         <property expression="$func:accessToken" name="uri.var.eventbrite.accessToken" scope="default" type="STRING"/>
         <property name="uri.var.eventbrite.apiUrl" expression="$func:uri" scope="default" type="STRING"/>
-
         <filter regex="false" source="boolean(get-property('uri.var.apiUrl'))">
             <then>
                 <property name="uri.var.eventbrite.apiUrl" value="https://www.eventbriteapi.com" scope="default" type="STRING"/>
             </then>
         </filter>
-
-
-
     </sequence>
 </template>

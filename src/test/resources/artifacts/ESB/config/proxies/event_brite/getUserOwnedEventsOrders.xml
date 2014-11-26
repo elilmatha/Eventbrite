@@ -21,7 +21,6 @@
             <event_brite.getUserOwnedEventsOrders>
                 <userId>{$ctx:userId}</userId>
                 <changed_since>{$ctx:changed_since}</changed_since>
-
             </event_brite.getUserOwnedEventsOrders>
             <respond/>
 

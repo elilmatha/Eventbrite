@@ -21,7 +21,6 @@
             <event_brite.getUserOwnedEventAttendees>
                 <userId>{$ctx:userId}</userId>
                 <expand>{$ctx:expand}</expand>
-
             </event_brite.getUserOwnedEventAttendees>
             <respond/>
 

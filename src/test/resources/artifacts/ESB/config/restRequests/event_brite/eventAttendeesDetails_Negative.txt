@@ -1,6 +1,6 @@
 {
 "apiUrl":"https://www.eventbriteapi.com",
 "accessToken":"%s",
-"EventID":"",
-"attendeesId":""
+"EventID":"8798",
+"attendeesId":"4607852"
 }

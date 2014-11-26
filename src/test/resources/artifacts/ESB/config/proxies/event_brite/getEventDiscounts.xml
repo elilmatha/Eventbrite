@@ -18,7 +18,6 @@
 
             <event_brite.getEventDiscounts>
                 <EventID>{$ctx:EventID}</EventID>
-
             </event_brite.getEventDiscounts>
             <respond/>
 
